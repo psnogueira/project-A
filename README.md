@@ -1,2 +1,9 @@
-# Projeto A
-Portfolio
+# Projeto Web Designer
+
+## Tarefas
+
+ - [] Header
+ - [] Apresentação
+ - [] Projetos
+ - [] Conhecimento
+ - []  Orçamento
