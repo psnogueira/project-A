@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Kanit, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.header-producs{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.header-image {
+    background-image: url('assets/walk_mountain1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-title {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    z-index: 2;
+}
+
+main {
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 2.6rem;
+    color: #6d99c5;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(225deg, rgba(255,255,255,0) 30%, rgba(0,0,0,1) 80%, rgba(0,0,0,1) 100%);    
+    z-index: 0;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px black;
+    z-index: 2;
+}
+
+.container.max-width-none {
+    max-width: none;
+}
+
+.container {
+    width: 85%;
+    max-width: 1440px;
+    padding-top: 224px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.max-width-600 {
+    max-width: 600px;
+    position: static;
+}
+
+.p-header {
+    z-index: 2;
+    letter-spacing: -.01em;
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.45em;
+    position: relative;
+}
+
+.button {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; 
+    z-index: 3;
+}
+
+.info {
+    border-color: #ffa621;
+    background-color: #ffa621;
+    color: black;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 12px 36px;
+    line-height: 1.4em;
+    transition: border-color .8s cubic-bezier(.165,.84,.44,1),background-color .8s cubic-bezier(.165,.84,.44,1),color .8s cubic-bezier(.165,.84,.44,1);
+}
+  
+.info:hover {
+    border-color: #383838;
+    background: #464646;
+    color: white;
+}
+
+.container-footer {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid #6d99c5;
+    text-align: center;
+    color: black;
+}
