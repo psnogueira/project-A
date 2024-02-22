@@ -1,5 +1,6 @@
 const translations = {
     en: {
+      flag_src:"assets/us.svg",
       welcome: 'Welcome to my website!',
       switchLanguage: "Switch Language",
       box_title: "The Great Mountains",
@@ -7,6 +8,7 @@ const translations = {
       button_seemore: "See more",
     },
     pt: {
+      flag_src:"assets/br.svg",
       welcome: 'Bem vindo ao meu site!',
       switchLanguage: "Trocar Idioma",
       box_title: "As Grandes Montanhas",
@@ -17,6 +19,7 @@ const translations = {
 
 // Tags variables
 var button = document.getElementById("languageButton");
+var button_image = document.getElementById("languageButtonImage");
 var title = document.getElementById("title1");
 var body1 = document.getElementById("body1");
 var button_seemore = document.getElementById("button_seemore");
@@ -24,6 +27,7 @@ var button_seemore = document.getElementById("button_seemore");
 // Update variables after html document is fully loaded.
 document.addEventListener('DOMContentLoaded', () => {
     button = document.getElementById("languageButton");
+    button_image = document.getElementById("languageButtonImage");
     title = document.getElementById("title1");
     body1 = document.getElementById("body1");
     button_seemore = document.getElementById("button_seemore");
@@ -37,7 +41,8 @@ function changeLanguage()
     document.documentElement.lang = nextLanguage;
 
     title.innerHTML = translations[nextLanguage].box_title;
-    button.innerHTML = translations[nextLanguage].switchLanguage;
+    //button.innerHTML = translations[nextLanguage].switchLanguage;
+    button_image.src = translations[nextLanguage].flag_src;
     body1.innerHTML = translations[nextLanguage].body1;
     button_seemore.innerHTML = translations[nextLanguage].button_seemore;
     // Update other elements with their respective translations

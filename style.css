@@ -56,6 +56,13 @@ h2 {
     z-index: 0;
 }
 
+.button-overlay {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    z-index: 2;
+}
+
 .text-overlay {
     position: absolute;
     top: 5%;
@@ -103,6 +110,20 @@ h2 {
     cursor: pointer;
     text-decoration: none; 
     z-index: 3;
+}
+
+.languageButton {
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+}
+
+.languageButtonImage {
+    width: 60px;
+    height: 40px;
 }
 
 .info {
