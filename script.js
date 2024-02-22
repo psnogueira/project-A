@@ -1,3 +1,40 @@
+/** How to add translations:
+ *  
+ * 1. Create a tag of the same name in all translations inside the Dictionaty.
+ * Example: 
+ * Dictionary = 
+ *  { 
+ *      en: {title: "Title",}, 
+ *      pt: {title: "Título",} 
+ *  }
+ * 
+ * 
+ * 2. Create an id and add lang="en" for the tag the you want to translate inside the .html file.
+ * Example:
+ * before: <h1 id="title" lang="en">The Great Mountains</h1>
+ * after: <h1 >The Great Mountains</h1>
+ * 
+ * 
+ * 3. Create the variable of the tag inside this .js file.
+ * Example:
+ * var title = document.getElementById("title");
+ * 
+ * 
+ * 4. Update the variable inside the document.addEventListener("DOMContentLoaded").
+ * Example:
+ *  document.addEventListener('DOMContentLoaded', () => { 
+ *      title = document.getElementById("title"); 
+ *  })
+ * 
+ * 
+ * 5. Add the change you want inside the function changeLanguage().
+ * Example:
+ *  function changeLanguage()
+ *  {
+ *      title.innerHTML = translations[nextLanguage].title;
+ *  }
+ */
+
 const translations = {
     en: {
       flag_src:"assets/us.svg",
