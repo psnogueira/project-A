@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
   button_seemore = document.getElementById("button_seemore");
 
   if (localStorage.getItem(preference) == "pt") {
-    console.log("troca")
     changeLanguage();
   }
 
