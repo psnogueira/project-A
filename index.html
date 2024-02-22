@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surviving Outdoors</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -12,15 +14,16 @@
         <div class="gradient-overlay"></div>
         <div class="text-overlay">
             <h1>Surviving Outdoors</h1>
+            <button id="languageButton" lang="en" onclick="changeLanguage();">Switch Language</button>
         </div>
         
         <div class="overlay"></div>
         <div class="container max-width-none">
             <div class="max-width-600">
-                <h2>The Great Mountains</h2>
-                <p class="p-header">Explore our articles on <b>adventure travel</b>, <b>camping tips</b>, and <b>nature photography</b>. Discover hidden trails, learn how to pitch a tent like a pro, and get inspired by breathtaking landscapes captured through the lens.</p>
+                <h2 id="title1" lang="en">The Great Mountains</h2>
+                <p lang="en" id="body1" class="p-header">Explore our articles on <b>adventure travel</b>, <b>camping tips</b>, and <b>nature photography</b>. Discover hidden trails, learn how to pitch a tent like a pro, and get inspired by breathtaking landscapes captured through the lens.</p>
                 <div>
-                    <a href="products.html" class="button info"> See more</a>
+                    <a href="products.html" class="button info" lang="en" id="button_seemore"> See more</a>
                 </div>
             </div>
         </div>
