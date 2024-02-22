@@ -61,13 +61,22 @@ var title = document.getElementById("title1");
 var body1 = document.getElementById("body1");
 var button_seemore = document.getElementById("button_seemore");
 
+let preference = "languagePreference";
+let defaultPreference = "en";
+
 // Update variables after html document is fully loaded.
 document.addEventListener('DOMContentLoaded', () => {
-    button = document.getElementById("languageButton");
-    button_image = document.getElementById("languageButtonImage");
-    title = document.getElementById("title1");
-    body1 = document.getElementById("body1");
-    button_seemore = document.getElementById("button_seemore");
+  button = document.getElementById("languageButton");
+  button_image = document.getElementById("languageButtonImage");
+  title = document.getElementById("title1");
+  body1 = document.getElementById("body1");
+  button_seemore = document.getElementById("button_seemore");
+
+  if (localStorage.getItem(preference) == "pt") {
+    console.log("troca")
+    changeLanguage();
+  }
+
 })
 
 function changeLanguage()
@@ -77,6 +86,8 @@ function changeLanguage()
     const nextLanguage = currentLanguage === 'en' ? 'pt' : 'en';
     document.documentElement.lang = nextLanguage;
 
+    localStorage.setItem(preference, nextLanguage);
+
     title.innerHTML = translations[nextLanguage].box_title;
     //button.innerHTML = translations[nextLanguage].switchLanguage;
     button_image.src = translations[nextLanguage].flag_src;
@@ -84,3 +95,4 @@ function changeLanguage()
     button_seemore.innerHTML = translations[nextLanguage].button_seemore;
     // Update other elements with their respective translations
 }
+
