@@ -13,8 +13,9 @@
     --amarelo: #ffa621;
     --azul1: #6d99c5;
     --azul2: #15616D;
-    --text_gradient1:#198bad;
-    --text_gradient2:#017B8E;
+    --marrom:#3d312d;
+    --text_gradient1:#3dbdac;
+    --text_gradient2:#0d95aa;
     --text_gradient3:#FF875C;
 }
 
@@ -36,7 +37,7 @@ body {
     background-image: url('assets/walk_mountain1.jpg');
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 900px;
     display: flex;
     justify-content: center;
 }
@@ -47,7 +48,7 @@ body {
     z-index: 2;
 }
 
-main {
+#secao-skills {
     padding: 2rem;
     line-height: 1.6;
 }
@@ -61,7 +62,7 @@ h2 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 800px;
+    height: 900px;
     background: linear-gradient(225deg, rgba(255,255,255,0) 30%, rgba(0,0,0,1) 80%, rgba(0,0,0,1) 100%);    
     z-index: 0;
 }
@@ -71,7 +72,7 @@ h2 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 800px;
+    height: 900px;
     background: linear-gradient(0deg, rgba(255,255,255,0) 30%, rgba(0,0,0,1) 100%);    
     z-index: 0;
 }
@@ -88,9 +89,10 @@ h2 {
     top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     /*font-family: "Concert One", sans-serif;*/
     color: rgb(255, 255, 255);
+    
     background-color: red;
     background-image: linear-gradient(45deg, 
                                       var(--text_gradient1) 10%, 
@@ -104,7 +106,8 @@ h2 {
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     cursor: pointer;
-    animation: rainbow-text-simple-animation-rev 0.6s ease forwards;
+    animation: rainbow-text-simple-animation-rev 0.4s ease forwards;
+    
     z-index: 2;
 }
 
@@ -144,7 +147,7 @@ h2 {
 .container {
     width: 85%;
     max-width: 1440px;
-    padding-top: 224px;
+    padding-top: 300px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -213,6 +216,7 @@ h2 {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 32px;
     padding-left: 48px;
     padding-right: 48px;
 }
@@ -223,4 +227,50 @@ footer {
     border-top: 1px solid var(--azul1);
     text-align: center;
     color: var(--preto);
+}
+
+#secao-camping {
+    height: 100vh;/*100vh* 700px*/
+    background-color: var(--marrom);
+}
+
+#secao-camping ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    height: 100%;
+}
+
+#secao-camping li{
+    list-style: none;
+}
+
+.card {
+    max-height: 490px;
+    max-width: 350px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.card .image {
+    height: 100%;
+    width: 100%;
+}
+
+.card .text{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.card:hover .text{
+    opacity: 1;
+    
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
 }
