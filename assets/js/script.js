@@ -37,7 +37,7 @@
 
 const translations = {
     en: {
-      flag_src:"assets/us.svg",
+      flag_src:"assets/images/us.svg",
       welcome: 'Welcome to my website!',
       switchLanguage: "Switch Language",
       box_title: "The Great Mountains",
@@ -45,7 +45,7 @@ const translations = {
       button_seemore: "See more",
     },
     pt: {
-      flag_src:"assets/br.svg",
+      flag_src:"assets/images/br.svg",
       welcome: 'Bem vindo ao meu site!',
       switchLanguage: "Trocar Idioma",
       box_title: "As Grandes Montanhas",

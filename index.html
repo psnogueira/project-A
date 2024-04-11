@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surviving Outdoors</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
 
 </head>
 
@@ -14,7 +14,7 @@
         <div class="gradient-overlay"></div>
         <div class="gradient-overlay2"></div>
         <div class="button-overlay">
-            <button class="languageButton" id="languageButton" lang="en" onclick="changeLanguage();"><img id="languageButtonImage" class="languageButtonImage" src="assets/us.svg" alt="Swith Language Button (US)" ></button>
+            <button class="languageButton" id="languageButton" lang="en" onclick="changeLanguage();"><img id="languageButtonImage" class="languageButtonImage" src="assets/images/us.svg" alt="Swith Language Button (US)" ></button>
         </div>
         <div class="text-overlay">
             <h1>Surviving Outdoors.</h1>
@@ -50,134 +50,76 @@
         </section>
 
         <section id="secao-camping">
+            <div>
+                <h2 class="camping-title">Products</h2>
+            </div>
+
             <ul class="flex-container">
                 <li class="card">
                     <div class="image">
-                        <img src="assets/camping1.jpg" alt="Camping">
+                        <img src="assets/images/product1.jpg" alt="Camping">
                     </div>
                     <div class="text">
-                        <h3>Camping 01</h3>
+                        <h3>Eletric heater</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate, quaerat voluptas pariatur repellendus itaque?</p>
                     </div>
                 </li>
                 <li class="card">
                     <div class="image">
-                        <img src="assets/camping2.jpg" alt="Camping">
+                        <img src="assets/images/product2.jpg" alt="Camping">
                     </div>
                     <div class="text">
-                        <h3>Camping 02</h3>
+                        <h3>Axe</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate, quaerat voluptas pariatur repellendus itaque?</p>
                     </div>
                 </li>
                 <li class="card">
                     <div class="image">
-                        <img src="assets/camping3.jpg" alt="Camping">
+                        <img src="assets/images/product3.jpg" alt="Camping">
                     </div>
                     <div class="text">
-                        <h3>Camping 03</h3>
+                        <h3>Mug</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate, quaerat voluptas pariatur repellendus itaque?</p>
                     </div>
                 </li>
             </ul>
-        </section>
-
-        <section id="secao-tools">
-            <ul class="cards">
-                <li class="cards-item">
-                    <div class="card">
-                        <div class="card-image card-image-1"></div>
-                        <div class="card-content">
-                            <div class="card-title">Card 1</div>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sapiente magnam laborum voluptate eum, facere non veritatis iusto consectetur quos.</p>
-                            <button class="btn btn-block btn-card">See more</button>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="cards-item">
-                    <div class="card">
-                        <div class="card-image card-image-2"></div>
-                        <div class="card-content">
-                            <div class="card-title">Card 2</div>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sapiente magnam laborum voluptate eum, facere non veritatis iusto consectetur quos.</p>
-                            <button class="btn btn-block btn-card">See more</button>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="cards-item">
-                    <div class="card">
-                        <div class="card-image card-image-3"></div>
-                        <div class="card-content">
-                            <div class="card-title">Card 3</div>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sapiente magnam laborum voluptate eum, facere non veritatis iusto consectetur quos.</p>
-                            <button class="btn btn-block btn-card">See more</button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section id="secao-formulario">
-            <h2>Outdoors</h2>
-            <form action="">
-                <div class="form-box line">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome">
-                </div>
-
-                <div class="form-box line">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                </div>
-
-                <div class="form-box">
-                    <label for="number">Number</label>
-                    <input type="text" id="number">
-                </div>
-
-                <div class="form-box">
-                    <label for="type">Tools</label>
-                    <select name="type" id="type">
-                        <option value="1">Tool 1</option>
-                        <option value="2">Tool 2</option>
-                        <option value="3">Tool 3</option>
-                        <option value="4">Tool 4</option>
-                        <option value="5">Tool 5</option>
-                    </select>
-                </div>
-
-                <label for="">Need help?</label>
-                <input name="help" type="radio" id="help_yes">
-                <label for="help_yes">Yes, I need.</label>
-                <input name="help" type="radio" id="help_no">
-                <label for="help_no">No, I don't.</label>
-                
-                <input type="checkbox" id="js1">
-                <label for="js1">Has JS automation 1</label>
-                <input type="checkbox" id="js2">
-                <label for="js2">Has JS automation 2</label>
-                <input type="checkbox" id="js3">
-                <label for="js3">Has JS automation 3</label>
-                <input type="checkbox" id="js4">
-                <label for="js4">Has JS automation 4</label>
-
-                <label for="metter">Metter</label>
-                <input type="range" id="metter">
-
-                <button class="submit-button">Subscribe</button>
-            </form>
         </section>
 
         <section id="secao-newsletter">
-            <h2>Subscribe to our Newsletter</h2>
-            <h4>Sign up for our newsletter here!</h4>
-            <form action="">
-                <label for="email">Email</label>
-                <input type="email" id="email">
+            <div class="footer-newsletter">
+                <div class="footer-top">
+                    <div class="footer-container">
+                        <div class="footer-text-container">
+                            <div>
+                                <div class="footer-top-text">
+                                    Join our Club. Subscribe now to our newsletter
+                                </div>
 
-                <button class="submit-button">Subscribe</button>
-            </form>
+                                <div class="footer-down-text">
+                                    If you like it, we will send you outdoor content that brings you happiness. Nothing boring, ever.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="footer-form">
+                                <form action="">
+                                    <div class="footer-form-container">
+                                        <input class="footer-form-input" maxlength="128" placeholder="Enter your email" type="email">
+                                        <input class="footer-form-submit" type="submit">
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="footer-form-down">
+                                <div class="footer-form-down-text">
+                                    We value your privacy. View privacy policy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
